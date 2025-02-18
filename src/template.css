@@ -1,5 +1,5 @@
 @import "../node_modules/modern-normalize/modern-normalize.css";
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   line-height: 1.5;
 }
@@ -30,9 +30,66 @@ h5 {
   font-size: inherit;
   font-weight: inherit;
 }
-
+body {
+  font-size: 18px;
+  font-family: "Roboto", serif;
+}
 img {
   display: block;
   max-inline-size: 100%;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header-img {
+  position: relative;
+  max-height: 500px;
+  margin: 25px;
+}
+.header-img h1 {
+  position: absolute;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.2rem;
+  width: 80%;
+  text-align: center;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+}
+.header-img img {
+  max-height: 400px;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+.about-container h2 {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.header-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.header-icons svg {
+  width: 25px;
+  transition: transform 0.05s ease;
+}
+.header-icons svg:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
