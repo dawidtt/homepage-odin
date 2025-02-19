@@ -48,7 +48,10 @@ header {
 .header-img {
   position: relative;
   max-height: 500px;
-  margin: 25px;
+  padding: 25px;
+  background-image: url(./assets/wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .header-img h1 {
   position: absolute;
