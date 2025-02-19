@@ -88,11 +88,11 @@ h2 {
   gap: 15px;
   margin: 15px 0 40px 0;
 }
-.header-icons svg {
+svg {
   width: 25px;
   transition: transform 0.05s ease;
 }
-.header-icons svg:hover {
+svg:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
@@ -182,7 +182,19 @@ footer .phone-container,
   display: flex;
   gap: 5px;
 }
-
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0 40px 0;
+  height: 35px;
+}
+.footer-icons svg {
+  width: 35px;
+  display: block;
+  fill: #000;
+}
 @media (min-width: 500px) {
   body {
     background-image: url(./assets/wave.svg);
