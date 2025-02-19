@@ -56,7 +56,7 @@ header {
 .header-img h1 {
   position: absolute;
   position: absolute;
-  top: 85%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2.2rem;
@@ -151,4 +151,34 @@ h3 {
 .main-container-bottom-wrapper svg {
   width: 26px;
   margin-left: 5px;
+}
+
+footer {
+  background-color: #006eb8;
+  color: #fff;
+  font-weight: 400;
+}
+.footer-info {
+  padding: 20px;
+}
+.footer-info h2 {
+  text-align: center;
+}
+.footer-info p + p,
+.footer-info div + div,
+.footer-info p + div {
+  margin-top: 20px;
+}
+.motivate {
+  font-size: 1.3rem;
+}
+footer svg {
+  width: 25px;
+  fill: #fff;
+  display: none;
+}
+footer .phone-container,
+.mail-container {
+  display: flex;
+  gap: 5px;
 }
