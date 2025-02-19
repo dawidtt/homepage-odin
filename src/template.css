@@ -44,14 +44,14 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: url(./assets/wave.svg);
+  background-repeat: no-repeat;
+  background-size: 1800px;
 }
 .header-img {
   position: relative;
   max-height: 500px;
   padding: 25px;
-  background-image: url(./assets/wave.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .header-img h1 {
   position: absolute;
@@ -67,14 +67,13 @@ header {
   font-weight: 800;
 }
 .header-img img {
-  max-height: 400px;
+  max-height: 500px;
+  -webkit-box-shadow: 0px 13px 31px -17px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 13px 31px -17px rgba(66, 68, 90, 1);
+  box-shadow: 0px 13px 31px -17px rgba(66, 68, 90, 1);
 }
-.about-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 15px;
+header p {
+  margin: 5px 15px;
 }
 h2 {
   font-size: 2rem;
@@ -87,6 +86,7 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 15px;
+  margin: 15px 0 40px 0;
 }
 .header-icons svg {
   width: 25px;
@@ -181,4 +181,54 @@ footer .phone-container,
 .mail-container {
   display: flex;
   gap: 5px;
+}
+
+@media (min-width: 500px) {
+  body {
+    background-image: url(./assets/wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 400%;
+  }
+  header {
+    display: block;
+    background-image: none;
+    background-color: #fff;
+    margin: 40px;
+    -webkit-box-shadow: 0px 13px 31px -17px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 13px 31px -17px rgba(66, 68, 90, 1);
+    box-shadow: 0px 13px 31px -17px rgba(66, 68, 90, 1);
+    padding: 10px;
+  }
+
+  .header-img {
+    float: left;
+    transform-origin: bottom right;
+    transform: scale(1.15);
+    padding: 15px;
+  }
+
+  .header-img img {
+    max-height: 220px;
+  }
+
+  .header-icons {
+    display: none;
+  }
+  main {
+    margin-top: 120px;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  footer svg {
+    display: block;
+  }
 }
