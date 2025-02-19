@@ -76,7 +76,7 @@ header {
   flex-direction: column;
   padding: 15px;
 }
-.about-container h2 {
+h2 {
   font-size: 2rem;
   font-family: "Playfair Display", serif;
   font-weight: 500;
@@ -95,4 +95,60 @@ header {
 .header-icons svg:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+main > h2 {
+  text-align: center;
+}
+.project-container-top {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+}
+.project-container:nth-child(1) .project-container-top {
+  background-color: rgb(106, 183, 185);
+}
+.project-container:nth-child(2) .project-container-top {
+  background-color: rgb(71, 219, 128);
+}
+.project-container:nth-child(3) .project-container-top {
+  background-color: rgb(71, 86, 219);
+}
+.project-container:nth-child(4) .project-container-top {
+  background-color: rgb(216, 134, 67);
+}
+.project-container:nth-child(5) .project-container-top {
+  background-color: rgb(219, 71, 152);
+}
+.project-container:nth-child(6) .project-container-top {
+  background-color: rgb(216, 255, 40);
+}
+.project-container {
+  margin: 50px 15px;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 13px 31px -17px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 13px 31px -17px rgba(66, 68, 90, 1);
+  box-shadow: 0px 13px 31px -17px rgba(66, 68, 90, 1);
+}
+h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+}
+.project-container-bottom {
+  padding: 15px;
+}
+.main-container-bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 10px;
+}
+.main-container-bottom-wrapper svg {
+  width: 26px;
+  margin-left: 5px;
 }
