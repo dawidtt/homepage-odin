@@ -195,6 +195,9 @@ footer .phone-container,
   display: block;
   fill: #000;
 }
+footer img {
+  max-height: 400px;
+}
 @media (min-width: 500px) {
   body {
     background-image: url(./assets/wave.svg);
@@ -230,6 +233,10 @@ footer .phone-container,
   main {
     margin-top: 120px;
   }
+  main > h2 {
+    text-align: left;
+    margin-left: 25px;
+  }
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -242,5 +249,61 @@ footer .phone-container,
   }
   footer svg {
     display: block;
+  }
+  .footer-info h2 {
+    text-align: left;
+  }
+  .footer-icons {
+    justify-content: start;
+  }
+}
+@media (min-width: 800px) {
+  body {
+    background-size: 2400px;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    max-width: min(1000px, 80vw);
+    margin: 40px auto;
+  }
+  .header-img {
+    transform: scale(1);
+    float: none;
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+  .header-img img {
+    max-height: 360px;
+  }
+  header h2,
+  header p,
+  header .header-icons {
+    grid-column: 2/3;
+  }
+  .header-icons {
+    display: flex;
+    justify-content: end;
+    margin-right: 25px;
+  }
+  main {
+    padding: 0 60px;
+    margin-bottom: 60px;
+  }
+  main > h2 {
+    text-align: left;
+    margin-left: 25px;
+  }
+  .footer-icons {
+    justify-content: start;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+  }
+  .footer-info h2 {
+    text-align: left;
   }
 }
